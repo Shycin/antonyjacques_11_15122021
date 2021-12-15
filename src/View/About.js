@@ -1,15 +1,15 @@
 import React from 'react';
 import Header from '../Components/Header';
 
-import '../css/Home.css';
+import '../css/About.css';
  
-class Home extends React.Component {  
+class About extends React.Component {
     render() {
         return (
-            <div id="home">
+            <div id="about">
                 <Header location={window.location.pathname} />
             </div>
         )
     }
 }
-export default Home;
+export default About;

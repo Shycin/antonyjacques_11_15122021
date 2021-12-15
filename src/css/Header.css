@@ -1,0 +1,48 @@
+header
+{
+    height: 47px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #logo img
+{
+    height: 47px;
+}
+
+header *
+{
+    color: var(--main-color);
+}
+
+header nav ol
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+header nav ol li
+{
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+header a.active
+{
+    text-decoration: underline;
+}
+
+
+@media screen and (min-width: 768px) {
+    header
+    {
+        height: 68px;
+    }
+
+    header nav ol li
+    {
+        margin-left: 50px;
+    } 
+}
