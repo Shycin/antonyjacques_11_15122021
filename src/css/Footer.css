@@ -1,0 +1,33 @@
+footer
+{
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    height: 209px;
+}
+
+footer *
+{
+    color: white;
+}
+
+footer .logo
+{
+    height: 40px;
+}
+
+footer .copyright
+{
+    height: 46px;
+}
+
+@media screen and (min-width: 768px) {
+    footer
+    {
+        gap: 30px;
+    }
+}

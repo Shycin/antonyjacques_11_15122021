@@ -10,7 +10,7 @@ class Header extends React.Component {
         const { location } = this.props;
         return (
             <header>
-                <div id="logo"><img src={logo} alt="Logo" /></div>
+                <div className="logo"><img src={logo} alt="Logo" /></div>
                 <nav>
                     <ol>
                         <li>

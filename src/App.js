@@ -5,16 +5,15 @@ class App extends React.Component {
   
   componentWillMount() {
     this.unlisten = this.props.history.listen((location, action) => {
-      console.log("on route change");
     });
   }
   componentWillUnmount() {
-      this.unlisten();
+    this.unlisten();
   }
   render() {
-     return (
-         <div>{this.props.children}</div>
-      );
+    return (
+        <div>{this.props.children}</div>
+    );
   }
 }
 export default withRouter(App);

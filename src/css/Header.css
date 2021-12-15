@@ -6,7 +6,7 @@ header
     align-items: center;
 }
 
-header #logo img
+header .logo img
 {
     height: 47px;
 }
@@ -41,8 +41,14 @@ header a.active
         height: 68px;
     }
 
+    header .logo img
+    {
+        height: 68px;
+    }
+
     header nav ol li
     {
         margin-left: 50px;
+        font-size: 24px;
     } 
 }
