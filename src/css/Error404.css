@@ -1,0 +1,82 @@
+#error404
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+
+#error404 main *
+{
+    color: var(--main-color);
+}
+
+
+#error404 main
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#error404 .main_message
+{
+    font-family: "Montserrat";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+#error404 .second_message
+{
+    margin-top: 10px;
+
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+#error404 .back_home
+{
+    margin-top: 80px;
+
+    text-decoration: underline;
+
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+
+@media screen and (min-width: 768px) {
+    #error404 .main_message
+    {
+        font-size: 288px;
+    }
+
+    #error404 .second_message
+    {
+        margin-top: 60px;
+
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    #error404 .back_home
+    {
+        margin-top: 120px;
+
+        font-size: 18px;
+        line-height: 26px;
+    }
+}

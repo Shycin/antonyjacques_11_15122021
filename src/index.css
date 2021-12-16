@@ -66,6 +66,11 @@ code {
   --main-color : #FF6060;
 }
 
+html, body, #root, #root>*
+{
+  height: 100%;
+}
+
 
 #root>div>*
 {
