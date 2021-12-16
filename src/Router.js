@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './View/Home';
-import About from './View/Home';
+import About from './View/About';
 import Error404 from './View/Error404';
  
 export default class RouteList extends React.Component {
