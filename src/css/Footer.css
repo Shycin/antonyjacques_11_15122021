@@ -26,7 +26,7 @@ footer .copyright
     height: 46px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     footer
     {
         gap: 30px;
