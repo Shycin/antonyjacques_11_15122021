@@ -1,6 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './View/Home';
+import Logement from './View/Logement';
 import About from './View/About';
 import Error404 from './View/Error404';
  
@@ -9,13 +10,16 @@ export default class RouteList extends React.Component {
     render() {
         return (
             <Router>
-                <Routes>
-                    <Route exact path="/" element={ <Home /> } />
-                    <Route exact path="/about" element={ <About /> } />
+                <Switch>
+                    <Route exact path="/" children={ <Home /> } />
+                    <Route path="/Fiche-Logement/:id" children={<Logement/>} />
+                    <Route exact path="/about" children={ <About /> } />
                     {/* <Route path="/will-match" element={} /> */}
-                    <Route path="*" element={ <Error404 /> } />
-                </Routes>
+                    <Route path="*" children={ <Error404 /> } />
+                </Switch>
             </Router>
         )
     }
 }
+
+//props => <DetailsPage id={props.match.params.id}/>

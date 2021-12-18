@@ -10,7 +10,7 @@
     border-radius: 25px;
 }
 
-.gallery__card
+.gallery>*
 {
     width: 100%;
     border-radius: 10px;
@@ -57,7 +57,7 @@
         background-color: #F6F6F6;
     }
 
-    .gallery__card
+    .gallery>*
     {
         width: calc((100% / 3) - 50px);
     }

@@ -1,0 +1,30 @@
+import React from 'react';
+
+import '../css/Slides.css';
+ 
+class Slides extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {      
+            images: props.images,
+            currentImageIndex: 0
+        };  
+    }
+
+    render() {
+        return (
+            <div className='slides'>
+                <div className=''></div>
+                {
+                    this.state.map( (image,key) => 
+                        <div key={key} className='slide'>
+                            
+                        </div>
+                    )
+                }
+            </div>
+        )
+    }
+}
+export default Slides;
