@@ -1,0 +1,45 @@
+.slides
+{
+    height: 415px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+.slides .slides__swipe
+{
+    position: absolute;
+    z-index: 10;
+}
+
+.slides .slides__swipe.prevSlide
+{
+    left: 0;
+}
+
+.slides .slides__swipe.nextSlide
+{
+    right: 0;
+}
+
+.slides .slides__swipe img
+{
+    height: 50px;
+}
+
+.slides .slide
+{
+    position: absolute;
+    width: 100%;
+}
+
+.slides .slide img
+{
+    object-fit: cover;
+    width: 100% !important;
+    margin: 0 !important;
+}

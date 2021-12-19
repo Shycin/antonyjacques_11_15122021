@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import Header from '../Components/Header';
-import Banner from '../Components/Banner';
+import Slides from '../Components/Slides';
 import Footer from '../Components/Footer';
 
 import dataAPI from '../data/appart.json';
@@ -12,15 +12,11 @@ class Logement extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {      
-            appart: []
-        };  
-    }
 
-    componentDidMount(){
         const id = this.props.match.params.id;
-        
-        this.setState({ appart: dataAPI.filter( (appart) => appart.id === id)[0] })
+        this.state = {      
+            appart: dataAPI.filter( (appart) => appart.id === id)[0]
+        };  
     }
 
     render() {
@@ -28,7 +24,7 @@ class Logement extends React.Component {
             <div id="home">
                 <Header location={window.location.pathname} />
                 <main>
-                    <Banner />
+                    <Slides images={this.state.appart.pictures}/>
                     {this.state.appart.id}
                 </main>
                 <Footer />

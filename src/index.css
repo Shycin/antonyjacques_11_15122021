@@ -79,6 +79,11 @@ html, body, #root, #root>*
   max-width: 2000px;
 }
 
+.hidden
+{
+    display: none;
+}
+
 
 
 @media screen and (min-width: 1024px) {
