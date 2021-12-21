@@ -17,8 +17,9 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-  color: black;
+  color: var(--main-color);
   text-decoration: none;
+  font-family: 'Montserrat';;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -69,6 +70,7 @@ code {
 html, body, #root, #root>*
 {
   position: relative;
+  height: 100%;
 }
 
 
@@ -77,6 +79,11 @@ html, body, #root, #root>*
   margin-top: 20px;
   padding: 0px 20px;
   max-width: 2000px;
+}
+
+#root>div>main
+{
+  min-height: 100%;
 }
 
 .hidden
