@@ -18,7 +18,7 @@
     display: flex;
     justify-content: space-between;
 
-    padding: 15px 20px;
+    padding: 5px 10px;
 
     z-index: 10;
     position: relative;
@@ -26,7 +26,8 @@
 
 .collapse .collapse__header h2
 {
-    font-size: 18px;
+    line-height: 18.54px;
+    font-size: 13px;
     color: white;
 }
 
@@ -37,7 +38,7 @@
 
 .collapse .collapse__header .collapse__header__switch svg
 {
-    width: 16px;
+    width: 9px;
     color: white;
 }   
 
@@ -56,4 +57,23 @@
     line-height: 25.67px;
 
     overflow-y: auto;
+}
+
+@media screen and (min-width: 576px) {
+
+    .collapse .collapse__header
+    {
+        padding: 15px 20px;
+    }
+
+    .collapse .collapse__header h2
+    {
+        line-height: 25.67px;
+        font-size: 18px;
+    }
+
+    .collapse .collapse__header .collapse__header__switch svg
+    {
+        width: 16px;
+    }   
 }

@@ -14,7 +14,7 @@ export default class RouteList extends React.Component {
                     <Route exact path="/" children={ <Home /> } />
                     <Route path="/Fiche-Logement/:id" children={<Logement/>} />
                     <Route exact path="/about" children={ <About /> } />
-                    {/* <Route path="/will-match" element={} /> */}
+                    <Route path="/404" children={ <Error404 /> } />
                     <Route path="*" children={ <Error404 /> } />
                 </Switch>
             </Router>

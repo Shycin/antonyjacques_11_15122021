@@ -2,15 +2,30 @@
 {
     margin-top: 24px;
     display: flex;
-    gap: 10px;
+    gap: 5px;
 }
 .rating svg
 {
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     fill: #E3E3E3;
 }
 .rating .rateActive svg
 {
     fill: var(--main-color);
+}
+
+
+@media screen and (min-width: 576px) {
+
+    .rating
+    {
+        gap: 10px;
+    }
+
+    .rating svg
+    {
+        width: 30px;
+        height: 30px;
+    }
 }

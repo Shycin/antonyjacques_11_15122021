@@ -1,15 +1,14 @@
 .flex_container
 {
-    display: flex;
+    display: block;
     width: 100%;
-    justify-content: space-between;
-    gap: 50px;
 }
 
-.left
+.right
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }
 
 .left
@@ -27,12 +26,12 @@
 
 #home #title
 {
-    font-size: 36px;
+    font-size: 18px;
 }
 
 #home #location
 {
-    font-size: 18px;
+    font-size: 14;
 }
 
 #home #tags
@@ -45,10 +44,10 @@
 
 #home #tags .tag
 {
-    font-size: 14px;
+    font-size: 10px;
 
-    height: 25px;
-    width: 115px;
+    height: 18px;
+    width: 84px;
     left: 0px;
     top: 0px;
     border-radius: 10px;
@@ -73,12 +72,12 @@
 #home #author #authorName
 {
     text-align: right;
-    font-size: 18px;
+    font-size: 12px;
 }
 #home #author #authorPicture
 {
-    width: 64px;
-    height: 64px;
+    width: 32px;
+    height: 32px;
     overflow: hidden;
 
     border-radius: 100%;
@@ -89,4 +88,50 @@
     width: 100% !important;
     height: 100% !important;
     margin: 0 !important;
+}
+
+
+
+@media screen and (min-width: 576px) {
+
+    .flex_container
+    {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .right
+    {
+        flex-direction: column;
+    }
+
+    #home #title
+    {
+        font-size: 36px;
+    }
+
+    #home #location
+    {
+        font-size: 18px;
+    }
+
+    #home #tags .tag
+    {
+        font-size: 14px;
+
+        height: 25px;
+        width: 115px;
+    }
+
+    #home #author #authorName
+    {
+        font-size: 18px;
+    }
+
+    #home #author #authorPicture
+    {
+        width: 64px;
+        height: 64px;
+    }
 }
