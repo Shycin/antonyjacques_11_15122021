@@ -58,8 +58,6 @@ class Logement extends React.Component {
             return <Redirect to="/404" />
         }
 
-        console.log(error, load, title)
-
         return (
             <div id="home">
                 { load ? <div>En attente</div> :
@@ -90,8 +88,8 @@ class Logement extends React.Component {
                                 </div>
                             </div>
                             <div className='flex_container information'>
-                                <Collapse name="Description" description={<RenderValueInString value={description}/>} />
-                                <Collapse name="Équipements" description={<RenderArrayInString array={equipments}/>} />
+                                <Collapse name="Description" minHeight={true} description={<RenderValueInString value={description}/>} />
+                                <Collapse name="Équipements" minHeight={true} description={<RenderArrayInString array={equipments}/>} />
                             </div>
                         </main>
                         <Footer />

@@ -31,16 +31,20 @@ class Collapse extends React.Component {
 
     
     render() {
-        const {name, description} = this.props;
+        const {name, description, minHeight} = this.props;
         return (
             <div className='collapse'>
                 <div className='collapse__header' onClick={this.openCollapse.bind(this)}><h2 className='collapse__header__name'>{name}</h2><div className='collapse__header__switch'>{this.state.open ? arrowUp : arrowDown }</div></div>
-                <div className={`collapse__description ${this.state.open ? '' : 'hidden'}`}>{description}</div>
+                <div className={`collapse__description ${minHeight ? 'minHeight' : ''} ${this.state.open ? '' : 'hidden'}`}>{description}</div>
             </div>
         )
     }
 }
 export default Collapse;
+
+Collapse.defaultProps = {
+    minHeight: false,
+}
 
 Collapse.propTypes = { 
     name: PropTypes.string.isRequired,

@@ -1,20 +1,24 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import banner from '../img/banner.png';
 import '../css/Banner.css';
  
 class Banner extends React.Component {
 
     render() {
+        const {banner} = this.props
+        const title = this.props.children
         return (
             <div className="banner">
-                <h1 className='title'>
-                    Chez vous, <br />
-                    partout et ailleurs
-                </h1>
+                {title}
                 <img src={banner} alt="Bannière" />
             </div>
         )
     }
 }
 export default Banner;
+
+Banner.propTypes = { 
+    banner: PropTypes.string.isRequired,
+    title: PropTypes.object
+};

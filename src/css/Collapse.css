@@ -1,7 +1,7 @@
 .collapse
 {
-    margin-top: 20px;
     width: 100%;
+    margin: 20px auto;
 }
 
 .collapse .hidden
@@ -47,19 +47,22 @@
 .collapse .collapse__description
 {
     background-color: #F7F7F7;
-    font-size: 18px;
-    padding: 40px 20px 0 20px;
-    margin-top: -15px;
-
-    height: 250px;
+    font-size: 12px;
+    padding: 20px 10px 20px 10px;
+    margin-top: -10px;
 
     border-radius: 10px;
-    line-height: 25.67px;
+    line-height: 17.11px;
 
     overflow-y: auto;
 }
 
 @media screen and (min-width: 576px) {
+
+    .collapse
+    {
+        width: 80%;
+    }
 
     .collapse .collapse__header
     {
@@ -76,4 +79,19 @@
     {
         width: 16px;
     }   
+
+    .collapse .collapse__description.minHeight
+    {
+        height: 250px;
+    }
+    
+
+    .collapse .collapse__description
+    {
+        font-size: 18px;
+        padding: 40px 20px 20px 20px;
+        margin-top: -15px;
+
+        line-height: 25.67px;
+    }
 }

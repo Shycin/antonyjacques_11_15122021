@@ -11,7 +11,7 @@ class Header extends React.Component {
         const { location } = this.props;
         return (
             <header>
-                <div className="logo">{kasa}</div>
+                <Link className="logo" to="/">{kasa}</Link>
                 <nav>
                     <ol>
                         <li>
