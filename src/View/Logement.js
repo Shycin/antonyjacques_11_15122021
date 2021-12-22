@@ -5,7 +5,6 @@ import Slides from '../Components/Slides';
 import Rating from '../Components/Rating';
 import Footer from '../Components/Footer';
 
-import {star} from '../data/picto.js';
 import dataAPI from '../data/appart.json';
 
 import '../css/Logement.css';
@@ -19,15 +18,6 @@ class Logement extends React.Component {
         this.state = {      
             appart: dataAPI.filter( (appart) => appart.id === id)[0]
         };  
-    }
-
-    star(max, score)
-    {
-        var elements = [];
-        for(let i = 0; i < max; i++){
-            elements.push(<div className={`${ i < score ? 'rateActive' : '' } `}>{star}</div>);
-        }
-        return elements;
     }
 
     render() {

@@ -1,7 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import leftSign from '../img/chevron-left.svg';
-import rightSign from '../img/chevron-right.svg';
+import {arrowLeft, arrowRight} from '../data/picto.js';
 
 import '../css/Slides.css';
  
@@ -36,7 +36,7 @@ class Slides extends React.Component {
     render() {
         return (
             <div className='slides'>
-                <div className='prevSlide slides__swipe' onClick={this.changeSlide.bind(this,-1)}><img src={leftSign} alt='previous' /></div>
+                <div className={`prevSlide slides__swipe ${this.state.images.length <= 1 ? 'hidden' : ''}`} onClick={this.changeSlide.bind(this,-1)}>{arrowLeft}</div>
                 {
                     this.state.images.map( (image,key) => 
                         <div key={key} className={`slide ${this.state.currentImageIndex !== key ? 'hidden' : ''}`}>
@@ -44,9 +44,13 @@ class Slides extends React.Component {
                         </div>
                     )
                 }
-                <div className='nextSlide slides__swipe' onClick={this.changeSlide.bind(this,1)}><img src={rightSign} alt='next' /></div>
+                <div className={`nextSlide slides__swipe ${this.state.images.length <= 1 ? 'hidden' : ''}`} onClick={this.changeSlide.bind(this,1)}>{arrowRight}</div>
             </div>
         )
     }
 }
 export default Slides;
+
+Slides.propTypes = { 
+    images: PropTypes.arrayOf(PropTypes.string).isRequired,
+};

@@ -26,9 +26,11 @@
     right: 0;
 }
 
-.slides .slides__swipe img
+.slides .slides__swipe svg
 {
     height: 50px;
+    color: white;
+    margin: 25px;
 }
 
 .slides .slide

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import {kasa} from '../data/picto.js';
@@ -26,3 +27,7 @@ class Header extends React.Component {
     }
 }
 export default Header;
+
+Header.propTypes = { 
+    location: PropTypes.string.isRequired,
+};
