@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom';
 import Header from '../Components/Header';
 import Slides from '../Components/Slides';
 import Rating from '../Components/Rating';
+import Collapse from '../Components/Collapse';
 import Footer from '../Components/Footer';
 
 import dataAPI from '../data/appart.json';
@@ -21,18 +22,29 @@ class Logement extends React.Component {
     }
 
     render() {
+        const {
+            pictures,
+            title,
+            description,
+            equipments,
+            tags,
+            rating,
+            host,
+            location
+        } = this.state.appart
+
         return (
             <div id="home">
                 <Header location={window.location.pathname} />
                 <main>
-                    <Slides images={this.state.appart.pictures}/>
+                    <Slides images={pictures}/>
                     <div className='flex_container description'>
                         <div className='left'>
-                            <h1 id="title">{this.state.appart.title}</h1>
-                            <div id="location">{this.state.appart.location}</div>
+                            <h1 id="title">{title}</h1>
+                            <div id="location">{location}</div>
                             <div id="tags">
                                 {
-                                    this.state.appart.tags.map( (tag, index) => {
+                                    tags.map( (tag, index) => {
                                         return (<div className='tag' key={index}>{tag}</div>)
                                     })
                                 }
@@ -40,15 +52,17 @@ class Logement extends React.Component {
                         </div>
                         <div className='right'>
                             <div id="author">
-                                <h2 id="authorName">{this.state.appart.host.name.split(' ')[0]}<br/>{this.state.appart.host.name.split(' ')[1]}</h2>
-                                <div id="authorPicture"><img src={this.state.appart.host.picture} alt="auteur"/></div>
+                                <h2 id="authorName">{host.name.split(' ')[0]}<br/>{host.name.split(' ')[1]}</h2>
+                                <div id="authorPicture"><img src={host.picture} alt="auteur"/></div>
                             </div>
                             <div id="rating">
-                                <Rating rate={parseInt(this.state.appart.rating)} maxrate={5}/>
+                                <Rating rate={parseInt(rating)} maxrate={5}/>
                             </div>
                         </div>
                     </div>
-
+                    <div className='flex_container information'>
+                        <Collapse name="Description" description={description}/>
+                    </div>
                 </main>
                 <Footer />
             </div>

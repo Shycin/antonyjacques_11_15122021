@@ -1,0 +1,54 @@
+.collapse
+{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.collapse .hidden
+{
+    display: none;
+}
+
+
+.collapse .collapse__header
+{
+    background-color: var(--main-color);
+    border-radius: 10px;    
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 15px 20px;
+
+    z-index: 10;
+    position: relative;
+}
+
+.collapse .collapse__header h2
+{
+    font-size: 18px;
+    color: white;
+}
+
+.collapse .collapse__header .collapse__header__switch
+{
+
+}
+
+.collapse .collapse__header .collapse__header__switch svg
+{
+    width: 16px;
+    color: white;
+}   
+
+
+
+.collapse .collapse__description
+{
+    background-color: #F7F7F7;
+    font-size: 18px;
+    padding: 50px 20px;
+    margin-top: -15px;
+
+    border-radius: 10px;
+}

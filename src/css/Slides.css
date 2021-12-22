@@ -10,6 +10,11 @@
     overflow: hidden;
 }
 
+.slides .hidden
+{
+    display: none;
+}
+
 .slides .slides__swipe
 {
     position: absolute;
