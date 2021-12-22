@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import logo from '../img/logo.svg';
+import {kasa} from '../data/picto.js';
 import '../css/Header.css';
  
 class Header extends React.Component {
@@ -10,7 +10,7 @@ class Header extends React.Component {
         const { location } = this.props;
         return (
             <header>
-                <div className="logo"><img src={logo} alt="Logo" /></div>
+                <div className="logo">{kasa}</div>
                 <nav>
                     <ol>
                         <li>

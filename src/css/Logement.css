@@ -89,23 +89,3 @@
     height: 100% !important;
     margin: 0 !important;
 }
-
-
-#home #rating
-{
-    margin-top: 24px;
-    display: flex;
-    gap: 10px;
-}
-#home #rating svg
-{
-    width: 30px;
-    height: 30px;
-    fill: #E3E3E3;
-}
-#home #rating .rateActive svg
-{
-    fill: var(--main-color);
-}
-
-

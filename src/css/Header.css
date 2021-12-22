@@ -6,8 +6,9 @@ header
     align-items: center;
 }
 
-header .logo img
+header .logo svg
 {
+    fill: var(--main-color);
     height: 47px;
 }
 

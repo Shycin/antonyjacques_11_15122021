@@ -2,6 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import Header from '../Components/Header';
 import Slides from '../Components/Slides';
+import Rating from '../Components/Rating';
 import Footer from '../Components/Footer';
 
 import {star} from '../data/picto.js';
@@ -53,9 +54,7 @@ class Logement extends React.Component {
                                 <div id="authorPicture"><img src={this.state.appart.host.picture} alt="auteur"/></div>
                             </div>
                             <div id="rating">
-                                {
-                                    this.star(5,this.state.appart.rating)
-                                }
+                                <Rating rate={parseInt(this.state.appart.rating)} maxrate={5}/>
                             </div>
                         </div>
                     </div>
