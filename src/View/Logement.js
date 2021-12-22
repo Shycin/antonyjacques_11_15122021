@@ -8,6 +8,9 @@ import Footer from '../Components/Footer';
 
 import dataAPI from '../data/appart.json';
 
+import RenderValueInString from '../Components/RenderValueInString';
+import RenderArrayInString from '../Components/RenderArrayInString';
+
 import '../css/Logement.css';
  
 class Logement extends React.Component {  
@@ -61,7 +64,8 @@ class Logement extends React.Component {
                         </div>
                     </div>
                     <div className='flex_container information'>
-                        <Collapse name="Description" description={description}/>
+                        <Collapse name="Description" description={<RenderValueInString value={description}/>} />
+                        <Collapse name="Équipements" description={<RenderArrayInString array={equipments}/>} />
                     </div>
                 </main>
                 <Footer />

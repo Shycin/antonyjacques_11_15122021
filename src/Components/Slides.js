@@ -34,17 +34,19 @@ class Slides extends React.Component {
     }
 
     render() {
+        const {images, currentImageIndex} = this.state;
         return (
             <div className='slides'>
-                <div className={`prevSlide slides__swipe ${this.state.images.length <= 1 ? 'hidden' : ''}`} onClick={this.changeSlide.bind(this,-1)}>{arrowLeft}</div>
+                <div className={`prevSlide slides__swipe ${images.length <= 1 ? 'hidden' : ''}`} onClick={this.changeSlide.bind(this,-1)}>{arrowLeft}</div>
                 {
-                    this.state.images.map( (image,key) => 
-                        <div key={key} className={`slide ${this.state.currentImageIndex !== key ? 'hidden' : ''}`}>
+                    images.map( (image,key) => 
+                        <div key={key} className={`slide ${currentImageIndex !== key ? 'hidden' : ''}`}>
                             <img src={image} alt='appartement'/>
+                            <p className='slide__position'>{currentImageIndex+1}/{images.length}</p>
                         </div>
                     )
                 }
-                <div className={`nextSlide slides__swipe ${this.state.images.length <= 1 ? 'hidden' : ''}`} onClick={this.changeSlide.bind(this,1)}>{arrowRight}</div>
+                <div className={`nextSlide slides__swipe ${images.length <= 1 ? 'hidden' : ''}`} onClick={this.changeSlide.bind(this,1)}>{arrowRight}</div>
             </div>
         )
     }

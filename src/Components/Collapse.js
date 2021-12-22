@@ -44,5 +44,5 @@ export default Collapse;
 
 Collapse.propTypes = { 
     name: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
+    description: PropTypes.object.isRequired,
 };
