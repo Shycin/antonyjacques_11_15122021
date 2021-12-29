@@ -13,7 +13,7 @@ class Gallery extends React.Component {
         };  
     }
 
-    componentWillMount() {
+    componentDidMount() {
         this.setState({ data: dataAPI })
     }
 
