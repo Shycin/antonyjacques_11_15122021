@@ -48,6 +48,10 @@
     height: 100%;
 }
 
+.gallery__card .gallery__card__image {
+    height: 255px;
+}
+
 
 @media screen and (min-width: 1024px) {
     .gallery
@@ -60,5 +64,9 @@
     .gallery>*
     {
         width: calc((100% / 3) - 50px);
+    }
+
+    .gallery__card .gallery__card__image {
+        height: auto;
     }
 }
