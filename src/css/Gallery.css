@@ -65,8 +65,4 @@
     {
         width: calc((100% / 3) - 50px);
     }
-
-    .gallery__card .gallery__card__image {
-        height: auto;
-    }
 }

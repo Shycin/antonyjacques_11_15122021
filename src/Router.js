@@ -21,5 +21,3 @@ export default class RouteList extends React.Component {
         )
     }
 }
-
-//props => <DetailsPage id={props.match.params.id}/>
