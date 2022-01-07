@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {star} from '../data/picto.js';
+import {star} from '../../data/picto.js';
 
-import '../css/Rating.css';
+import './index.css';
  
 class Rating extends React.Component {  
 

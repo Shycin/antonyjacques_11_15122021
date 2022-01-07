@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {arrowLeft, arrowRight} from '../data/picto.js';
+import {arrowLeft, arrowRight} from '../../data/picto.js';
 
-import '../css/Slides.css';
+import './index.css';
  
 class Slides extends React.Component {
 

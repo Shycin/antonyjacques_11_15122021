@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from '../Components/Header';
-import Banner from '../Components/Banner';
-import Gallery from '../Components/Gallery';
-import Footer from '../Components/Footer';
+import Header from '../../Components/Header';
+import Banner from '../../Components/Banner';
+import Gallery from '../../Components/Gallery';
+import Footer from '../../Components/Footer';
 
-import banner from '../img/banner.png';
+import banner from '../../img/banner.png';
 
-import '../css/Home.css';
+import './index.css';
  
 class Home extends React.Component {  
     render() {

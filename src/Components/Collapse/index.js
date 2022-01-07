@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {arrowUp, arrowDown} from '../data/picto.js';
+import {arrowUp, arrowDown} from '../../data/picto.js';
 
-import '../css/Collapse.css';
+import './index.css';
  
 class Collapse extends React.Component {
 

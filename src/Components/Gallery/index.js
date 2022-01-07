@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import dataAPI from '../data/appart.json';
-import '../css/Gallery.css';
+import dataAPI from '../../data/appart.json';
+import './index.css';
  
 class Gallery extends React.Component {
 

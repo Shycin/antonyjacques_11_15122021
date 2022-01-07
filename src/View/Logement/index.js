@@ -1,17 +1,17 @@
 import React from 'react';
 import { withRouter,Redirect } from 'react-router-dom';
-import Header from '../Components/Header';
-import Slides from '../Components/Slides';
-import Rating from '../Components/Rating';
-import Collapse from '../Components/Collapse';
-import Footer from '../Components/Footer';
+import Header from '../../Components/Header';
+import Slides from '../../Components/Slides';
+import Rating from '../../Components/Rating';
+import Collapse from '../../Components/Collapse';
+import Footer from '../../Components/Footer';
 
-import dataAPI from '../data/appart.json';
+import dataAPI from '../../data/appart.json';
 
-import RenderValueInString from '../Components/RenderValueInString';
-import RenderArrayInString from '../Components/RenderArrayInString';
+import RenderValueInString from '../../Components/RenderValueInString';
+import RenderArrayInString from '../../Components/RenderArrayInString';
 
-import '../css/Logement.css';
+import './index.css';
  
 class Logement extends React.Component {  
 

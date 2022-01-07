@@ -1,7 +1,7 @@
 import React from 'react';
 
-import {kasa} from '../data/picto.js';
-import '../css/Footer.css';
+import {kasa} from '../../data/picto.js';
+import './index.css';
  
 class Footer extends React.Component {
 

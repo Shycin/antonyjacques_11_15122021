@@ -1,14 +1,14 @@
 import React from 'react';
-import Header from '../Components/Header';
-import Banner from '../Components/Banner';
-import Collapse from '../Components/Collapse';
-import Footer from '../Components/Footer';
+import Header from '../../Components/Header';
+import Banner from '../../Components/Banner';
+import Collapse from '../../Components/Collapse';
+import Footer from '../../Components/Footer';
 
-import RenderValueInString from '../Components/RenderValueInString';
+import RenderValueInString from '../../Components/RenderValueInString';
 
-import banner from '../img/banner_2.png';
+import banner from '../../img/banner_2.png';
 
-import '../css/About.css';
+import './index.css';
  
 class About extends React.Component {
     render() {

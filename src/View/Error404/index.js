@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from '../Components/Header';
-import Footer from '../Components/Footer';
+import Header from '../../Components/Header';
+import Footer from '../../Components/Footer';
 import { Link } from 'react-router-dom';
 
-import '../css/Error404.css';
+import './index.css';
  
 class Error404 extends React.Component {
     render() {

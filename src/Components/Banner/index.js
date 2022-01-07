@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import '../css/Banner.css';
+import './index.css';
  
 class Banner extends React.Component {
 
